@@ -10,18 +10,18 @@ public class TaskController {
 
     /**
      * Método que guarda la tarea que recibe
-     * del HTML en la base de datos y 
+     * del HTML en la base de datos y
      * redige al usuario a la página principal.
      * 
      * @return La redirección a la página principal.
      */
     @PostMapping("guardar")
-   public String saveTask(@ModelAttribute("task") Task newTask) {
+    public String saveTask(@ModelAttribute("task") Task newTask) {
 
-    System.out.println(newTask.getDescription());
+        
 
-    // Al final redirige el navegador a la página principal (/)
-    return "redirect:/";
-   } 
-    
+        // Al final redirige el navegador a la página principal (/)
+        return "redirect:/";
+    }
+
 }
