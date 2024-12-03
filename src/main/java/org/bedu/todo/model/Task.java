@@ -1,15 +1,15 @@
 package org.bedu.todo.model;
 
 public class Task {
-    private String text;
+    private String description;
     private boolean completed;
 
-    public String getText() {
-        return text;
+    public String getDescription() {
+        return description;
     }
     
-    public void setText(String text) {
-        this.text = text;
+    public void setDescription(String text) {
+        this.description = text;
     }
 
     public boolean isCompleted() {

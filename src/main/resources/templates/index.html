@@ -7,11 +7,12 @@
         <link rel="stylesheet" type="text/css" href="/css/index.css" />
     </head>
     <body>
-        <h1>Proyecto hecho por: ---</h1>
-        <form>
+        <h1>Proyecto hecho por: <span th:text="${author}"></span></h1>
+
+        <form th:object="${task}">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nueva tarea</label>
-             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="exampleInputEmail1" th:field="*{description}" />
             </div>
             <button type="submit" class="btn btn-primary">Guardar</button>
         </form>

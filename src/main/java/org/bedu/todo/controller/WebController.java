@@ -23,7 +23,7 @@ public class WebController {
         Task empty = new Task();
 
         // Enviando un String llamado "author" al HTML
-        model.addAttribute("author", "Jorge :)");
+        model.addAttribute("author", "Bedu");
 
         // Enviando un objeto llamado "task" al HTML
         model.addAttribute("task", empty);
